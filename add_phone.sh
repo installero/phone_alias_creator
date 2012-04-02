@@ -1,4 +1,7 @@
 #!/bin/bash
+if [ "$4" == "" ]
+then echo "Usage: $0 name short_number full_number group_id"
+
 HTTP_PATH='http://universe.uiscom.ru/profile/phone_book'
 
 NAME=$1
