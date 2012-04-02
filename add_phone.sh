@@ -16,7 +16,7 @@ CENTREX_PATH="$UISCOM_PATH/centrex/phone_book"
 
 PARAMS="update=[{\"id\":\"\",\"name\":\"$NAME\",\"short_phone\":\"$SHORT\",\"group_id\":\"$GROUP_ID\"}]&remove="
 
-curl --cookie cookie.txt -d $PARAMS "$PROFILE_PATH/update_contacts/?" > index.html
+curl --cookie cookie.txt -d $PARAMS "$PROFILE_PATH/update_contacts/" > index.html
 
 curl --cookie cookie.txt "$PROFILE_PATH/get_contacts/?start=0&limit=9999&rel_id=$GROUP_ID&rnd=0.$RANDOM" > index.html
 
